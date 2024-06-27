@@ -1,0 +1,73 @@
+[gd_scene load_steps=11 format=3 uid="uid://bcid20miougvp"]
+
+[ext_resource type="Texture2D" uid="uid://djuf0e7h6e5kw" path="res://assets/sprites/dimensional_portal.png" id="1_gr6jx"]
+[ext_resource type="Script" path="res://scripts/portal.gd" id="1_oks20"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncl6m"]
+atlas = ExtResource("1_gr6jx")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_licca"]
+atlas = ExtResource("1_gr6jx")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yb03x"]
+atlas = ExtResource("1_gr6jx")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_61a0n"]
+atlas = ExtResource("1_gr6jx")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7aon"]
+atlas = ExtResource("1_gr6jx")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wys1h"]
+atlas = ExtResource("1_gr6jx")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fj184"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ncl6m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_licca")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yb03x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_61a0n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7aon")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wys1h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ltqc"]
+size = Vector2(7, 29.5)
+
+[node name="Portal" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_oks20")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_fj184")
+autoplay = "default"
+frame_progress = 0.506397
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -15.25)
+shape = SubResource("RectangleShape2D_7ltqc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
