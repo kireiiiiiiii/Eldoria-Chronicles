@@ -1,9 +1,9 @@
 2a60927148abd1d33b818b535e306557
-::res://::1719454284
+::res://::1719455622
 default_bus_layout.tres::AudioBusLayout::1008466913528073006::1719447800::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1719450936::0::1::::<><>::
 icon.svg::CompressedTexture2D::3361700040565077033::1719410569::1719452657::1::::<><>::
-::res://assets/::1719455325
+::res://assets/::1719455334
 ::res://assets/fonts/::1719452657
 PixelOperator8-Bold.ttf::FontFile::5097033986527410108::1719410930::1719452657::1::::<><>::
 PixelOperator8.ttf::FontFile::345118820619414011::1719410930::1719452657::1::::<><>::
@@ -24,7 +24,7 @@ platforms.png::CompressedTexture2D::8389378892155629195::1719410930::1719452657:
 slime_green.png::CompressedTexture2D::397028392029463023::1719410930::1719452657::1::::<><>::
 slime_purple.png::CompressedTexture2D::8769373858317650637::1719410930::1719452657::1::::<><>::
 world_tileset.png::CompressedTexture2D::6374917197125419836::1719410930::1719452657::1::::<><>::
-::res://assets/textures/::1719455327
+::res://assets/textures/::1719455334
 banner.png::CompressedTexture2D::5460395319083278511::1719455327::1719455330::1::::<><>::
 ::res://scenes/::1719454282
 coin.tscn::PackedScene::196783536937571126::1719451535::0::1::::<><>::res://scripts/coin.gd<>uid://dvug0uer1vnac::::res://assets/sprites/coin.png<>uid://bvp6i2tb7royy::::res://assets/sounds/coin.wav
