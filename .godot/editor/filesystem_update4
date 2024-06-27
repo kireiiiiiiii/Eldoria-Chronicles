@@ -1,2 +1,6 @@
 res://scenes/game.tscn
 res://scripts/game_manager.gd
+res://scripts/coin.gd
+res://scripts/killzone.gd
+res://scripts/player.gd
+res://scripts/purple_slime.gd
