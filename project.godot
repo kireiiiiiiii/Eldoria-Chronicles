@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="Eldoria-Chronicles"
+config/name="Eldoria Chronicles"
 run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://icon.png"
 
 [autoload]
 
