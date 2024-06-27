@@ -4,14 +4,16 @@ extends Node2D
 @onready var ray_cast_right = $RayCastRight;
 @onready var anim_sprite = $AnimatedSprite2D;
 
-const SPEED = 60;
+var minSpeed = 30;
+var maxSpeed = 70;
+var speed = randi() % (maxSpeed - minSpeed + 1) + minSpeed;
 
 var direction = 1;
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	setDirection();
-	position.x += _delta * SPEED * direction;
+	position.x += _delta * speed * direction;
 
 func setDirection():
 	# Go right if left colliding

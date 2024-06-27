@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwdrbb5h6ybyj"]
+
+[ext_resource type="Texture2D" uid="uid://bd1kyo6k5aowv" path="res://assets/textures/title.png" id="1_rfkg4"]
+
+[node name="GameTitle" type="Sprite2D"]
+position = Vector2(7.15256e-07, -2)
+scale = Vector2(0.233129, 0.233129)
+texture = ExtResource("1_rfkg4")
